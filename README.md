@@ -11,7 +11,7 @@ Here’s a preview of the live prototype:
 
 ![Rentflow360 Demo Screenshot](./readme_assets/rflow-screeshot.png)
 
-🔗 **Live Demo:** [\[Add your hosted demo link here\]](https://r-flow360.netlify.app/)
+🔗 **Live Demo:** [\[[Hosted demo link :](https://r-flow360.netlify.app/)\]]
 
 ---
 
