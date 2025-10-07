@@ -5,7 +5,11 @@ import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { activeAdminAccount } from '@/lib/active-accounts';
+import {
+  activeAdminAccount,
+  activeAgent,
+  activeRegUserAccount,
+} from '@/lib/active-accounts';
 import { setAuthState } from '@/store/auth';
 import { Role } from '@/types';
 import { logHandler } from '@/utils';
@@ -58,12 +62,12 @@ export default function LoginPage() {
         break;
 
       case Role.Agent_Seller:
-        dispatch(setAuthState(activeAdminAccount));
+        dispatch(setAuthState(activeAgent));
         router.push('/dashboard/agent');
         break;
 
       case Role.Reg_User:
-        dispatch(setAuthState(activeAdminAccount));
+        dispatch(setAuthState(activeRegUserAccount));
         router.push('/dashboard/user');
         break;
 
