@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
+import { Property } from "@/types";
 
 export async function GET(req: Request) {
     try {
@@ -17,8 +18,8 @@ export async function GET(req: Request) {
         let properties = JSON.parse(data) || [];
 
         // Apply filters
-        properties = properties.filter((p: any) => {
-            const matchesLocation = location ? p.location.toLowerCase().includes(location.toLowerCase()) : true;
+        properties = properties.filter((p: Property) => {
+            const matchesLocation = location ? p.location.toLowerCase().includes(location.toLowerCase()) || p.title.toLowerCase().includes(location.toLowerCase()) : true;
             const matchesType = type ? p.type === type : true;
             const matchesBedrooms = bedRooms ? p.bedrooms === bedRooms : true;
             const matchesPrice = p.price >= minPrice && p.price <= maxPrice;
