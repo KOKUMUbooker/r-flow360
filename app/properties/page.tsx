@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { logHandler } from '@/utils';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import { useGetPropertiesQuery } from '../rtk-apis';
+import { useGetPropertiesQuery } from '../../rtk-apis';
 import { RotateCw } from 'lucide-react';
 
 export default function PropertiesPage() {

@@ -1,5 +1,5 @@
 import { createSelector, createSlice } from "@reduxjs/toolkit";
-import type { RootState } from "./index";
+import type { ReduxStoreSt } from "./index";
 import type { MESSAGE_TYPE } from "@/types";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
@@ -36,7 +36,7 @@ const logSlice = createSlice({
     },
 });
 
-const selectLog = (state: RootState) => state.log;
+const selectLog = (state: ReduxStoreSt) => state.log;
 
 export function getErrorMessages() {
     return createSelector([selectLog], (logObject) => logObject.message);

@@ -12,6 +12,7 @@ export interface BlogPost {
   tags: string[]
 }
 
+const image = "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmVhbHRvcnxlbnwwfHwwfHx8Mg%3D%3D"
 export const blogPosts: BlogPost[] = [
   {
     id: "1",
@@ -24,8 +25,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: "Real Estate Expert",
     publishDate: "2025-01-05",
     category: "Property Trends",
-    image: "/nairobi-skyline-neighborhoods.jpg",
-    readTime: "5 min read",
+    image, readTime: "5 min read",
     tags: ["Nairobi", "Young Professionals", "Neighborhoods"],
   },
   {
@@ -39,8 +39,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: "Market Analyst",
     publishDate: "2025-01-03",
     category: "Market Analysis",
-    image: "/kenya-real-estate-market-trends.jpg",
-    readTime: "8 min read",
+    image, readTime: "8 min read",
     tags: ["Market Trends", "Investment", "Kenya"],
   },
   {
@@ -54,8 +53,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: "Property Consultant",
     publishDate: "2025-01-01",
     category: "Home Tips",
-    image: "/first-time-renter-guide-checklist.jpg",
-    readTime: "6 min read",
+    image, readTime: "6 min read",
     tags: ["Renting", "First-Time", "Tips"],
   },
   {
@@ -68,8 +66,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: "Negotiation Specialist",
     publishDate: "2024-12-28",
     category: "Home Tips",
-    image: "/rent-negotiation-tips-kenya.jpg",
-    readTime: "7 min read",
+    image, readTime: "7 min read",
     tags: ["Negotiation", "Renting", "Money Saving"],
   },
   {
@@ -82,8 +79,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: "Coastal Property Expert",
     publishDate: "2024-12-25",
     category: "Property Trends",
-    image: "/mombasa-coastal-properties-beachfront.jpg",
-    readTime: "6 min read",
+    image, readTime: "6 min read",
     tags: ["Mombasa", "Coastal", "Beachfront"],
   },
   {
@@ -96,8 +92,7 @@ export const blogPosts: BlogPost[] = [
     authorRole: "Security Consultant",
     publishDate: "2024-12-22",
     category: "Home Tips",
-    image: "/home-security-tips-kenya-renters.jpg",
-    readTime: "5 min read",
+    image, readTime: "5 min read",
     tags: ["Security", "Safety", "Home Tips"],
   },
 ]

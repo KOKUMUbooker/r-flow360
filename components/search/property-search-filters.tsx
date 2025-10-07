@@ -155,7 +155,7 @@ export function PropertySearchFiltersCard(
                           filters?.amenities &&
                           filters.amenities.includes(amenity)
                         }
-                        onCheckedChange={onSetAmenities}
+                        onCheckedChange={() => onSetAmenities(amenity)}
                         name={amenity}
                         id={amenity}
                       />

@@ -12,7 +12,7 @@ import { PropertySearchFilters } from '@/types';
 import { logHandler } from '@/utils';
 import { RotateCcw } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { useGetPropertiesQuery } from '../rtk-apis';
+import { useGetPropertiesQuery } from '../../rtk-apis';
 
 export default function SearchPage() {
   const [filters, setFilters] = useState<PropertySearchFilters>(

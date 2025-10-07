@@ -117,9 +117,6 @@ export function SiteHeader() {
               </Link>
             </Button>
           )}
-          {/* <Button asChild className="hidden sm:flex">
-            <Link href="/properties/new">List Property</Link>
-          </Button> */}
         </div>
       </div>
     </header>
