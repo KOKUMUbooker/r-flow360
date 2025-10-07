@@ -14,8 +14,11 @@ export const dummyProperties: Property[] = [
     bathrooms: 2,
     size: 150,
     type: "apartment",
-    images: ["/modern-apartment-living-room.png", "/modern-kitchen.png", "/bedroom-with-city-view.jpg"],
-    amenities: ["Parking", "Security", "Gym", "Swimming Pool", "Backup Generator"],
+    "images": [
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ], amenities: ["Parking", "Security", "Gym", "Swimming Pool", "Backup Generator"],
     agent: {
       id: "agent1",
       name: "Jane Wanjiru",
@@ -44,8 +47,10 @@ export const dummyProperties: Property[] = [
     bathrooms: 4,
     size: 350,
     type: "villa",
-    images: ["/luxury-villa-exterior.png", "/villa-swimming-pool.jpg", "/luxury-living-room.png"],
-    amenities: ["Garden", "Swimming Pool", "Garage", "Security", "Solar Panels"],
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ], amenities: ["Garden", "Swimming Pool", "Garage", "Security", "Solar Panels"],
     agent: {
       id: "agent2",
       name: "David Omondi",
@@ -74,8 +79,10 @@ export const dummyProperties: Property[] = [
     bathrooms: 1,
     size: 45,
     type: "studio",
-    images: ["/studio-apartment-interior.png", "/compact-kitchen.jpg", "/small-bathroom.png"],
-    amenities: ["Parking", "Security", "Water Supply"],
+    "images": [
+      "https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ], amenities: ["Parking", "Security", "Water Supply"],
     agent: {
       id: "agent3",
       name: "Mary Njeri",
@@ -104,8 +111,10 @@ export const dummyProperties: Property[] = [
     bathrooms: 2,
     size: 100,
     type: "apartment",
-    images: ["/apartment-balcony-view.png", "/modern-bedroom.png", "/cozy-dining-nook.png"],
-    amenities: ["Parking", "Security", "Elevator", "Backup Generator"],
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ], amenities: ["Parking", "Security", "Elevator", "Backup Generator"],
     agent: {
       id: "agent1",
       name: "Jane Wanjiru",
@@ -134,8 +143,10 @@ export const dummyProperties: Property[] = [
     bathrooms: 2,
     size: 200,
     type: "commercial",
-    images: ["/commercial-office-space.png", "/modern-office-reception.png", "/modern-meeting-room.png"],
-    amenities: ["Parking", "Security", "Elevator", "Central AC", "Fiber Internet"],
+    "images": [
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ], amenities: ["Parking", "Security", "Elevator", "Central AC", "Fiber Internet"],
     agent: {
       id: "agent2",
       name: "David Omondi",
@@ -164,8 +175,10 @@ export const dummyProperties: Property[] = [
     bathrooms: 5,
     size: 450,
     type: "house",
-    images: ["/luxury-house-exterior.jpg", "/spacious-living-room.png", "/luxurious-master-suite.png"],
-    amenities: ["Garden", "DSQ", "Garage", "Security", "Borehole", "Solar Panels"],
+    "images": [
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ], amenities: ["Garden", "DSQ", "Garage", "Security", "Borehole", "Solar Panels"],
     agent: {
       id: "agent2",
       name: "David Omondi",
