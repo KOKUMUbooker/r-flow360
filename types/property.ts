@@ -31,3 +31,12 @@ export interface Property {
     updatedAt: string
     verified: boolean
 }
+
+
+export interface PropertySearchFilters {
+    location?: string;
+    type?: PropertyType;
+    bedRooms?: number;
+    priceRange: { from: number; to: number };
+    amenities?: string[];
+}

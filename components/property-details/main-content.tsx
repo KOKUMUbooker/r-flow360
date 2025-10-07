@@ -109,7 +109,7 @@ export function MainContent({ property }: { property: Property }) {
       <div>
         <h2 className="text-2xl font-bold mb-4">Amenities</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {property.amenities.map((amenity) => (
+          {property?.amenities?.map((amenity) => (
             <div key={amenity} className="flex items-center gap-2">
               <CheckCircle2 className="h-5 w-5 text-primary" />
               <span>{amenity}</span>

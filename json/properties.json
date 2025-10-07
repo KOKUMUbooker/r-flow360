@@ -11,8 +11,18 @@
     "bathrooms": "2",
     "size": "150",
     "type": "apartment",
-    "images": "/modern-apartment-living-room.png,/modern-kitchen.png,/bedroom-with-city-view.jpg",
-    "amenities": "Parking,Security,Gym,Swimming Pool,Backup Generator",
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1676321046262-4978a752fb15?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent1",
       "name": "Jane Wanjiru",
@@ -40,8 +50,18 @@
     "bathrooms": "4",
     "size": "350",
     "type": "villa",
-    "images": "/luxury-villa-exterior.png,/villa-swimming-pool.jpg,/luxury-living-room.png",
-    "amenities": "Garden,Swimming Pool,Garage,Security,Solar Panels",
+    "images": [
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent2",
       "name": "David Omondi",
@@ -69,8 +89,18 @@
     "bathrooms": "1",
     "size": "45",
     "type": "studio",
-    "images": "/studio-apartment-interior.png,/compact-kitchen.jpg,/small-bathroom.png",
-    "amenities": "Parking,Security,Water Supply",
+    "images": [
+      "https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1534159468957-f35ef72761d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent3",
       "name": "Mary Njeri",
@@ -98,8 +128,19 @@
     "bathrooms": "2",
     "size": "100",
     "type": "apartment",
-    "images": "/apartment-balcony-view.png,/modern-bedroom.png,/cozy-dining-nook.png",
-    "amenities": "Parking,Security,Elevator,Backup Generator",
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent1",
       "name": "Jane Wanjiru",
@@ -127,8 +168,19 @@
     "bathrooms": "2",
     "size": "200",
     "type": "commercial",
-    "images": "/commercial-office-space.png,/modern-office-reception.png,/modern-meeting-room.png",
-    "amenities": "Parking,Security,Elevator,Central AC,Fiber Internet",
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent2",
       "name": "David Omondi",
@@ -156,8 +208,19 @@
     "bathrooms": "5",
     "size": "450",
     "type": "house",
-    "images": "/luxury-house-exterior.jpg,/spacious-living-room.png,/luxurious-master-suite.png",
-    "amenities": "Garden,DSQ,Garage,Security,Borehole,Solar Panels",
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent2",
       "name": "David Omondi",
@@ -185,8 +248,19 @@
     "bathrooms": "1",
     "size": "60",
     "type": "apartment",
-    "images": "/thika-road-apartment.png,/open-kitchen.png,/modern-bathroom.png",
-    "amenities": "Parking,Security,Elevator,Water Supply",
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent3",
       "name": "Mary Njeri",
@@ -214,8 +288,17 @@
     "bathrooms": "2",
     "size": "130",
     "type": "apartment",
-    "images": "/kileleshwa-apartment.png,/rooftop-lounge.jpg,/elegant-interior.png",
-    "amenities": "Gym,Security,Elevator,Parking,Backup Generator",
+    "images": [
+      "https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent1",
       "name": "Jane Wanjiru",
@@ -243,8 +326,18 @@
     "bathrooms": "3",
     "size": "180",
     "type": "house",
-    "images": "/syokimau-maisonette.png,/backyard-garden.jpg,/modern-kitchen-interior.png",
-    "amenities": "Garden,Parking,Security,Borehole",
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent4",
       "name": "Peter Mwangi",
@@ -272,8 +365,19 @@
     "bathrooms": "6",
     "size": "500",
     "type": "villa",
-    "images": "/diani-villa-exterior.png,/beachfront-view.jpg,/luxury-pool.png",
-    "amenities": "Swimming Pool,Beach Access,Garden,Garage,Security",
+    "images": [
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent5",
       "name": "Fatma Ali",
@@ -301,8 +405,19 @@
     "bathrooms": "2",
     "size": "95",
     "type": "apartment",
-    "images": "/mombasa-apartment.png,/balcony-view-sea.jpg,/modern-living-room.png",
-    "amenities": "Security,Elevator,Parking",
+    "images": [
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent5",
       "name": "Fatma Ali",
@@ -330,8 +445,19 @@
     "bathrooms": "4",
     "size": "400",
     "type": "commercial",
-    "images": "/upperhill-office-building.png,/modern-boardroom.png,/corporate-lobby.png",
-    "amenities": "Elevator,Backup Generator,Security,Parking,Fiber Internet",
+    "images": [
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent2",
       "name": "David Omondi",
@@ -359,8 +485,18 @@
     "bathrooms": "3",
     "size": "250",
     "type": "apartment",
-    "images": "/lavington-penthouse.png,/rooftop-terrace.jpg,/modern-bathroom-luxury.png",
-    "amenities": "Gym,Security,Parking,Elevator,Backup Generator",
+    "images": [
+      "https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1515263487990-61b07816b324?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent1",
       "name": "Jane Wanjiru",
@@ -388,8 +524,18 @@
     "bathrooms": "1",
     "size": "35",
     "type": "studio",
-    "images": "/rongai-studio.png,/simple-bedroom.jpg,/compact-bathroom.jpg",
-    "amenities": "Security,Parking,Water Supply",
+    "images": [
+      "https://images.unsplash.com/photo-1695781222463-51bc3d448952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1571236673892-13d222da2019?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXBwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent1",
       "name": "Jane Wanjiru",
@@ -417,8 +563,18 @@
     "bathrooms": "5",
     "size": "380",
     "type": "villa",
-    "images": "/nyali-villa-exterior.png,/private-pool.jpg,/luxury-interior-villa.png",
-    "amenities": "Swimming Pool,Garage,Security,Garden,Solar Water Heating",
+    "images": [
+      "https://images.unsplash.com/photo-1493246318656-5bfd4cfb29b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1534159468957-f35ef72761d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGFwcGFydG1lbnR8ZW58MHx8MHx8fDA%3D"
+    ],
+    "amenities": [
+      "Parking",
+      "Security",
+      "Gym",
+      "Swimming Pool",
+      "Backup",
+      "Generator"
+    ],
     "agent": {
       "id": "agent1",
       "name": "Jane Wanjiru",

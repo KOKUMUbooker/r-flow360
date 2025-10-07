@@ -1,9 +1,22 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
-import { Building2, User } from 'lucide-react';
+import { ReduxStoreSt } from '@/store';
+import { logOutUser } from '@/store/auth';
+import { Building2, LogOut, User } from 'lucide-react';
 import Link from 'next/link';
-import { useSelector } from 'react-redux';
+import { useRouter } from 'next/navigation';
+import { useDispatch, useSelector } from 'react-redux';
 
 export function SiteHeader() {
+  const router = useRouter();
+  const dispatch = useDispatch();
+  const isLoggedIn = !!useSelector((st: ReduxStoreSt) => st.user.user);
+  const logout = () => {
+    dispatch(logOutUser());
+    router.push('/login');
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
@@ -87,18 +100,23 @@ export function SiteHeader() {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu> */}
-          <Button
-            variant="outline"
-            size="sm"
-            className="gap-2 bg-transparent"
-            asChild
-          >
-            <Link href="/login">
-              <User className="h-4 w-4" />
-              <span className="hidden sm:inline">Login</span>
-            </Link>
-          </Button>
-
+          {isLoggedIn ? (
+            <Button size={'sm'} onClick={logout} variant={'outline'}>
+              <LogOut /> Log out
+            </Button>
+          ) : (
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-2 bg-transparent"
+              asChild
+            >
+              <Link href="/login">
+                <User className="h-4 w-4" />
+                <span className="hidden sm:inline">Login</span>
+              </Link>
+            </Button>
+          )}
           {/* <Button asChild className="hidden sm:flex">
             <Link href="/properties/new">List Property</Link>
           </Button> */}

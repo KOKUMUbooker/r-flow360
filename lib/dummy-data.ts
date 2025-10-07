@@ -1,4 +1,4 @@
-import { Property } from "@/types"
+import { Property, PropertySearchFilters } from "@/types"
 
 export const dummyProperties: Property[] = [
   {
@@ -183,14 +183,6 @@ export const dummyProperties: Property[] = [
   },
 ]
 
-enum Role {
-  buyer = "buyer",
-  seller = "seller",
-  renter = "renter",
-  admin = "admin",
-  agent = "agent"
-}
-
 export const dummyUsers = [
   {
     id: "user1",
@@ -216,13 +208,14 @@ export const dummyUsers = [
   },
 ]
 
+
 export const dummyAgents = [
   {
     id: "agent1",
-    name: "Jane Wanjiru",
+    name: "Jane Doe",
     email: "jane@rentflow360.com",
     phone: "+254 712 345 678",
-    avatar: "/professional-woman-diverse.png",
+    avatar: "https://images.unsplash.com/photo-1699220274995-a37956b7e43e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     properties: ["1", "4"],
     totalListings: 12,
     activeListings: 8,
@@ -232,8 +225,8 @@ export const dummyAgents = [
   },
   {
     id: "agent2",
-    name: "David Omondi",
-    email: "david@rentflow360.com",
+    name: "John Doe",
+    email: "john@rentflow360.com",
     phone: "+254 723 456 789",
     avatar: "/professional-man.jpg",
     properties: ["2", "5", "6"],
@@ -296,4 +289,12 @@ export const dummyAnalytics = {
     { date: "2024-01-18", views: 189, inquiries: 9 },
     { date: "2024-01-17", views: 223, inquiries: 14 },
   ],
+}
+
+export const defaultPropertySearchFilters: PropertySearchFilters = {
+  amenities: undefined,
+  bedRooms: undefined,
+  location: undefined,
+  priceRange: { from: 0, to: 1000_000_000 },
+  type: undefined
 }

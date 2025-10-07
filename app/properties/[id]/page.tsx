@@ -1,17 +1,41 @@
-'use client';
-
-import { SiteHeader } from '@/components/site-header';
-import { SiteFooter } from '@/components/site-footer';
 import { PropertyDetails } from '@/components/property-details';
-import { dummyProperties } from '@/lib/dummy-data';
+import { SiteFooter } from '@/components/site-footer';
+import { SiteHeader } from '@/components/site-header';
+import { Property } from '@/types';
+import fs from 'fs/promises';
 import { notFound } from 'next/navigation';
+import path from 'path';
 import { use } from 'react';
 
-export default function PropertyDetailPage(props: {
-  params: Promise<{ id: string }>;
+export async function generateStaticParams() {
+  const propertiesJsonPath = path.join(
+    process.cwd(),
+    'json',
+    'properties.json'
+  );
+  const data = await fs.readFile(propertiesJsonPath, 'utf-8');
+  const properties: Property[] = JSON.parse(data);
+
+  // Return an array of { id } objects for all property routes
+  return properties.map((property) => ({
+    id: property.id,
+  }));
+}
+
+export default async function PropertyDetailPage({
+  params,
+}: {
+  params: { id: string };
 }) {
-  const params = use(props.params);
-  const property = dummyProperties.find((p) => p.id === params.id);
+  const propertiesJsonPath = path.join(
+    process.cwd(),
+    'json',
+    'properties.json'
+  );
+  const data = await fs.readFile(propertiesJsonPath, 'utf-8');
+  const properties: Property[] = JSON.parse(data);
+
+  const property = properties.find((p) => p.id === params.id);
 
   if (!property) {
     notFound();

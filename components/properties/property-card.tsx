@@ -15,6 +15,10 @@ interface PropertyCardProps {
 export function PropertyCard({ property }: PropertyCardProps) {
   const router = useRouter();
 
+  const onGoToDetails = () => {
+    router.push(`/properties/${property.id}`);
+  };
+
   return (
     <Link key={property.id} href={`/properties/${property.id}`}>
       <Card className="overflow-hidden hover:shadow-lg transition-shadow h-full">
@@ -47,7 +51,7 @@ export function PropertyCard({ property }: PropertyCardProps) {
 
           <div className="flex items-baseline gap-1">
             <p className="text-2xl font-bold text-primary">
-              KSh {property.price.toLocaleString()}
+              KSh {(+property.price ? +property.price : 0).toLocaleString()}
             </p>
             {property.priceType === 'rent' && (
               <span className="text-sm text-muted-foreground">/month</span>

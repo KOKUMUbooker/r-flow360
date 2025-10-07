@@ -5,6 +5,10 @@ import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+import { activeAdminAccount } from '@/lib/active-accounts';
+import { setAuthState } from '@/store/auth';
+import { Role } from '@/types';
+import { logHandler } from '@/utils';
 import { Building2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useDispatch } from 'react-redux';
@@ -46,6 +50,28 @@ export default function LoginPage() {
   //   }, 1000);
   // };
 
+  const onLogin = (role: Role) => {
+    switch (role) {
+      case Role.Admin:
+        dispatch(setAuthState(activeAdminAccount));
+        router.push('/dashboard/admin');
+        break;
+
+      case Role.Agent_Seller:
+        dispatch(setAuthState(activeAdminAccount));
+        router.push('/dashboard/agent');
+        break;
+
+      case Role.Reg_User:
+        dispatch(setAuthState(activeAdminAccount));
+        router.push('/dashboard');
+        break;
+
+      default:
+        logHandler({ message: 'Invalid role provided' });
+    }
+  };
+
   return (
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
@@ -69,13 +95,21 @@ export default function LoginPage() {
               Login using accounts of pre-exisitng users
             </div>
             <div className="space-y-3 flex flex-col justify-center px-4">
-              <Button variant={'secondary'}>
+              <Button
+                variant={'secondary'}
+                onClick={onLogin.bind(null, Role.Reg_User)}
+              >
                 Login using a regular user account
               </Button>
-              <Button variant={'outline'}>
+              <Button
+                variant={'outline'}
+                onClick={onLogin.bind(null, Role.Agent_Seller)}
+              >
                 Login using a seller/agent account
               </Button>
-              <Button>Login using an admin account</Button>
+              <Button onClick={onLogin.bind(null, Role.Admin)}>
+                Login using an admin account
+              </Button>
             </div>
             {/* <LoginForm
               roleSt={roleSt}
