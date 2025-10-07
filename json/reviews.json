@@ -1,0 +1,82 @@
+[
+  {
+    "id": "rev1",
+    "propertyId": "1",
+    "rating": 5,
+    "comment": "Amazing apartment! Great view and very secure. Jane was very professional throughout the process.",
+    "date": 1705190400000,
+    "user_id": "user1"
+  },
+  {
+    "id": "rev2",
+    "propertyId": "2",
+    "rating": 4,
+    "comment": "Beautiful villa in a quiet area. Loved the pool and spacious rooms, but Wi-Fi could be better.",
+    "date": 1705276800000,
+    "user_id": "user2"
+  },
+  {
+    "id": "rev3",
+    "propertyId": "3",
+    "rating": 4,
+    "comment": "Cozy and affordable. Perfect for students or single professionals. Mary was super responsive!",
+    "date": 1705363200000,
+    "user_id": "user4"
+  },
+  {
+    "id": "rev4",
+    "propertyId": "4",
+    "rating": 5,
+    "comment": "Loved staying here! Very modern and close to shops. Would definitely rent again.",
+    "date": 1705449600000,
+    "user_id": "user5"
+  },
+  {
+    "id": "rev5",
+    "propertyId": "5",
+    "rating": 3,
+    "comment": "Good location in CBD but parking is limited. Great for short-term office rentals.",
+    "date": 1705536000000,
+    "user_id": "user3"
+  },
+  {
+    "id": "rev6",
+    "propertyId": "6",
+    "rating": 5,
+    "comment": "Absolutely stunning house. Great neighborhood and excellent finishes. David made the process smooth.",
+    "date": 1705622400000,
+    "user_id": "user1"
+  },
+  {
+    "id": "rev7",
+    "propertyId": "2",
+    "rating": 4,
+    "comment": "Very peaceful environment. The garden and pool are perfect for family gatherings.",
+    "date": 1705708800000,
+    "user_id": "user5"
+  },
+  {
+    "id": "rev8",
+    "propertyId": "4",
+    "rating": 5,
+    "comment": "One of the best apartments I’ve stayed in Nairobi. Clean, modern, and secure.",
+    "date": 1705795200000,
+    "user_id": "user2"
+  },
+  {
+    "id": "rev9",
+    "propertyId": "1",
+    "rating": 4,
+    "comment": "Spacious rooms and a great location in Kilimani. Could use a bit more parking space though.",
+    "date": 1705881600000,
+    "user_id": "user4"
+  },
+  {
+    "id": "rev10",
+    "propertyId": "5",
+    "rating": 5,
+    "comment": "Perfect office space for startups. High foot traffic and modern facilities.",
+    "date": 1705968000000,
+    "user_id": "user5"
+  }
+]

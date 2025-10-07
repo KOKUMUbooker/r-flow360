@@ -1,0 +1,83 @@
+[
+  {
+    "reason": "Incorrect pricing information",
+    "description": "The listed rent is different from what the agent mentioned on call.",
+    "reporterName": "Jane Doe",
+    "reporterEmail": "janedoe@example.com",
+    "user_id": "user_001",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Misleading description",
+    "description": "The property is much smaller than what’s shown in the photos.",
+    "reporterName": "John Smith",
+    "reporterEmail": "johnsmith@example.com",
+    "user_id": "user_002",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Property no longer available",
+    "description": "The agent said this property was rented out weeks ago.",
+    "reporterName": "Mary Wambui",
+    "reporterEmail": "marywambui@example.com",
+    "user_id": "user_003",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Duplicate listing",
+    "description": "This same property appears under another agent’s name.",
+    "reporterName": "Kevin Otieno",
+    "reporterEmail": "kevinotieno@example.com",
+    "user_id": "user_004",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Fraudulent listing",
+    "description": "The agent requested payment before viewing and became unresponsive.",
+    "reporterName": "Amina Yusuf",
+    "reporterEmail": "aminayusuf@example.com",
+    "user_id": "user_005",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Inappropriate content",
+    "description": "One of the photos contains offensive graffiti on the walls.",
+    "reporterName": "Brian Mwangi",
+    "reporterEmail": "brianmwangi@example.com",
+    "user_id": "user_006",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Wrong location",
+    "description": "The pinned map location leads to a completely different area.",
+    "reporterName": "Cynthia Njoroge",
+    "reporterEmail": "cynthianjoroge@example.com",
+    "user_id": "user_007",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Poor quality images",
+    "description": "The uploaded photos are too blurry to identify the property.",
+    "reporterName": "David Kamau",
+    "reporterEmail": "davidkamau@example.com",
+    "user_id": "user_008",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  },
+  {
+    "reason": "Other",
+    "description": "The agent’s contact number is invalid and unreachable.",
+    "reporterName": "Lydia Achieng",
+    "reporterEmail": "lydiaachieng@example.com",
+    "user_id": "user_009",
+    "propertyId": "04",
+    "propertyName": "2-Bedroom Apartment in Westlands"
+  }
+]

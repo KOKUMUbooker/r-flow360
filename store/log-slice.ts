@@ -36,18 +36,18 @@ const logSlice = createSlice({
     },
 });
 
-const selectError = (state: RootState) => state.error;
+const selectLog = (state: RootState) => state.log;
 
 export function getErrorMessages() {
-    return createSelector([selectError], (errorObject) => errorObject.message);
+    return createSelector([selectLog], (logObject) => logObject.message);
 }
 
-export function getUnloadedErrorMessages() {
-    return createSelector([selectError], (errorObject) =>
-        errorObject.message.filter((msg: MESSAGE_TYPE) => !msg.loaded),
+export function getUnloadedLogMessages() {
+    return createSelector([selectLog], (logObject) =>
+        logObject.message.filter((msg: MESSAGE_TYPE) => !msg.loaded),
     );
 }
 
 export const { clearMessage, addMessage, updateLogLoadStates } =
     logSlice.actions;
-export const errorReducer = logSlice.reducer;
+export const logReducer = logSlice.reducer;

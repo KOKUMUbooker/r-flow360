@@ -29,6 +29,7 @@ export const dummyProperties: Property[] = [
     featured: true,
     createdAt: "2024-01-15",
     updatedAt: "2024-01-20",
+    verified: true
   },
   {
     id: "2",
@@ -58,6 +59,7 @@ export const dummyProperties: Property[] = [
     featured: true,
     createdAt: "2024-01-10",
     updatedAt: "2024-01-18",
+    verified: true
   },
   {
     id: "3",
@@ -87,6 +89,7 @@ export const dummyProperties: Property[] = [
     featured: false,
     createdAt: "2024-01-12",
     updatedAt: "2024-01-19",
+    verified: true
   },
   {
     id: "4",
@@ -116,6 +119,7 @@ export const dummyProperties: Property[] = [
     featured: true,
     createdAt: "2024-01-08",
     updatedAt: "2024-01-17",
+    verified: true
   },
   {
     id: "5",
@@ -145,6 +149,7 @@ export const dummyProperties: Property[] = [
     featured: true,
     createdAt: "2024-01-05",
     updatedAt: "2024-01-16",
+    verified: true
   },
   {
     id: "6",
@@ -174,6 +179,7 @@ export const dummyProperties: Property[] = [
     featured: true,
     createdAt: "2024-01-03",
     updatedAt: "2024-01-15",
+    verified: true
   },
 ]
 

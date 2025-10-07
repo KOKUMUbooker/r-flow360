@@ -2,7 +2,7 @@
 
 import {
   clearMessage,
-  getUnloadedErrorMessages,
+  getUnloadedLogMessages,
   updateLogLoadStates,
 } from '@/store/log-slice';
 import { MESSAGE_TYPE } from '@/types';
@@ -11,9 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'sonner';
 
 export function LogComponent() {
-  const unloadedErrors: MESSAGE_TYPE[] = useSelector(
-    getUnloadedErrorMessages()
-  );
+  const unloadedErrors: MESSAGE_TYPE[] = useSelector(getUnloadedLogMessages());
   const dispatch = useDispatch();
 
   useEffect(() => {

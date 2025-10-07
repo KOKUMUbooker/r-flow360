@@ -29,4 +29,5 @@ export interface Property {
     featured: boolean
     createdAt: string
     updatedAt: string
+    verified: boolean
 }

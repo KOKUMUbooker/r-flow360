@@ -1,9 +1,8 @@
 export enum Role {
-    buyer = "buyer",
-    seller = "seller",
-    renter = "renter",
-    admin = "admin",
-    agent = "agent"
+    /** Buyer or renter */
+    Reg_User = "Buyer_or_renter",
+    Agent_Seller = "Agent_or_seller",
+    Admin = "Admin"
 }
 
 export interface User {

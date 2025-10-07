@@ -1,64 +1,50 @@
 'use client';
 
-import type React from 'react';
-import { useState } from 'react';
-import { SiteHeader } from '@/components/site-header';
+// import { LoginForm } from '@/components/login';
 import { SiteFooter } from '@/components/site-footer';
+import { SiteHeader } from '@/components/site-header';
 import { Button } from '@/components/ui/button';
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { Building2, AlertCircle } from 'lucide-react';
-import Link from 'next/link';
+import { Card } from '@/components/ui/card';
+import { Building2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
+import { useDispatch } from 'react-redux';
+// import { useState } from 'react';
 
 export default function LoginPage() {
   const router = useRouter();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [role, setRole] = useState<string>('');
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const dispatch = useDispatch();
+  // const emailSt = useState('');
+  // const passwordSt = useState('');
+  // const roleSt = useState<string>('');
+  // const [isLoading, setIsLoading] = useState(false);
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError('');
+  // const handleLogin = async (e: React.FormEvent) => {
+  //   const email = emailSt[0];
+  //   const role = roleSt[0];
+  //   const password = passwordSt[0];
+  //   e.preventDefault();
 
-    if (!email || !password || !role) {
-      setError('Please fill in all fields');
-      return;
-    }
+  //   if (!email || !password || !role) {
+  //     logHandler({ message: 'Please fill in all fields' }, 'error');
+  //     return;
+  //   }
 
-    setIsLoading(true);
+  //   setIsLoading(true);
 
-    // Simulate login - in real app, this would call an API
-    setTimeout(() => {
-      setIsLoading(false);
+  //   // Simulate login - in real app, this would call an API
+  //   setTimeout(() => {
+  //     setIsLoading(false);
 
-      // Redirect based on role
-      if (role === 'buyer') {
-        router.push('/dashboard/user');
-      } else if (role === 'agent') {
-        router.push('/dashboard/agent');
-      } else if (role === 'admin') {
-        router.push('/dashboard/admin');
-      }
-    }, 1000);
-  };
+  //     // Redirect based on role
+  //     if (role === 'buyer') {
+  //       router.push('/dashboard/user');
+  //     } else if (role === 'agent') {
+  //       router.push('/dashboard/agent');
+  //     } else if (role === 'admin') {
+  //       router.push('/dashboard/admin');
+  //     }
+  //   }, 1000);
+  // };
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -79,73 +65,25 @@ export default function LoginPage() {
           </div>
 
           <Card>
-            <CardHeader>
-              <CardTitle>Sign In</CardTitle>
-              <CardDescription>
-                Enter your credentials to access your account
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleLogin} className="space-y-4">
-                {error && (
-                  <Alert variant="destructive">
-                    <AlertCircle className="h-4 w-4" />
-                    <AlertDescription>{error}</AlertDescription>
-                  </Alert>
-                )}
-
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="you@example.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
-                  <Input
-                    id="password"
-                    type="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                  />
-                </div>
-
-                <div className="w-full space-y-2">
-                  <Label htmlFor="role">Account Type</Label>
-                  <Select value={role} onValueChange={setRole} required>
-                    <SelectTrigger id="role">
-                      <SelectValue placeholder="Select your role" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="buyer">Buyer/Renter</SelectItem>
-                      <SelectItem value="agent">Seller/Agent</SelectItem>
-                      <SelectItem value="admin">Admin</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <Button type="submit" className="w-full" disabled={isLoading}>
-                  {isLoading ? 'Signing in...' : 'Sign In'}
-                </Button>
-
-                <div className="text-center text-sm">
-                  <Link
-                    href="/forgot-password"
-                    className="text-primary hover:underline"
-                  >
-                    Forgot password?
-                  </Link>
-                </div>
-              </form>
-            </CardContent>
+            <div className="text-center text-sm space-y-2">
+              Login using accounts of pre-exisitng users
+            </div>
+            <div className="space-y-3 flex flex-col justify-center px-4">
+              <Button variant={'secondary'}>
+                Login using a regular user account
+              </Button>
+              <Button variant={'outline'}>
+                Login using a seller/agent account
+              </Button>
+              <Button>Login using an admin account</Button>
+            </div>
+            {/* <LoginForm
+              roleSt={roleSt}
+              emailSt={emailSt}
+              isLoading={isLoading}
+              passwordSt={passwordSt}
+              handleLogin={handleLogin}
+            /> */}
           </Card>
 
           {/* <Card>
@@ -163,12 +101,12 @@ export default function LoginPage() {
             </CardContent>
           </Card> */}
 
-          <div className="text-center text-xs text-muted-foreground">
+          {/* <div className="text-center text-xs text-muted-foreground">
             <p>Demo credentials for testing:</p>
             <p className="mt-1">Buyer: buyer@example.com / password</p>
             <p>Agent: agent@example.com / password</p>
             <p>Admin: admin@example.com / password</p>
-          </div>
+          </div> */}
         </div>
       </main>
 
