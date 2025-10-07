@@ -1,3 +1,4 @@
+import { Providers } from '@/components/providers';
 import { GeistMono } from 'geist/font/mono';
 import { GeistSans } from 'geist/font/sans';
 import type { Metadata } from 'next';
@@ -22,7 +23,9 @@ export default function RootLayout({
       <body
         className={`font-sans ${GeistSans.variable} ${GeistMono.variable} antialiased flex flex-col items-center sm:px-2`}
       >
-        <Suspense fallback={null}>{children}</Suspense>
+        <Providers>
+          <Suspense fallback={null}>{children}</Suspense>
+        </Providers>
       </body>
     </html>
   );

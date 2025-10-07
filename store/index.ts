@@ -1,17 +1,15 @@
-import { postsApi } from "@/api";
 import { configureStore } from "@reduxjs/toolkit";
-import { errorReducer } from "./error-slice";
-import { userSliceReducer } from "./auth
+import { errorReducer } from "./log-slice";
+import { userSliceReducer } from "./auth"
 
 const store = configureStore({
     reducer: {
         user: userSliceReducer,
         error: errorReducer,
-        [postsApi.reducerPath]: postsApi.reducer,
     },
-    middleware: (getDefaultMiddleware) => {
-        return getDefaultMiddleware().concat(postsApi.middleware);
-    },
+    // middleware: (getDefaultMiddleware) => {
+    //     return getDefaultMiddleware().concat(postsApi.middleware);
+    // },
 });
 
 export { store };

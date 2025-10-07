@@ -2,7 +2,7 @@ import type { SerializedError } from "@reduxjs/toolkit";
 import { store } from "../store";
 import type { ERROR_INFO, HttpErrorRes, } from "@/types";
 import type { FetchBaseQueryError } from "@reduxjs/toolkit/query";
-import { addMessage } from "@/store/error-slice";
+import { addMessage } from "@/store/log-slice";
 
 export function logHandler(
     error: FetchBaseQueryError | SerializedError,

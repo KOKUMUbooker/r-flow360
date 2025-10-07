@@ -5,8 +5,8 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 const initialState: { message: MESSAGE_TYPE[] } = { message: [] };
 
-const errorSlice = createSlice({
-    name: "error",
+const logSlice = createSlice({
+    name: "log",
     initialState,
     reducers: {
         addMessage(state, action: PayloadAction<MESSAGE_TYPE>) {
@@ -49,5 +49,5 @@ export function getUnloadedErrorMessages() {
 }
 
 export const { clearMessage, addMessage, updateLogLoadStates } =
-    errorSlice.actions;
-export const errorReducer = errorSlice.reducer;
+    logSlice.actions;
+export const errorReducer = logSlice.reducer;
