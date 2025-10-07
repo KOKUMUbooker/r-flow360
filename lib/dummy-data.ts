@@ -183,6 +183,7 @@ export const dummyProperties: Property[] = [
   },
 ]
 
+export type DummyUser = typeof dummyUsers[0]
 export const dummyUsers = [
   {
     id: "user1",
@@ -208,7 +209,7 @@ export const dummyUsers = [
   },
 ]
 
-
+export type DummyAgent = typeof dummyAgents[0]
 export const dummyAgents = [
   {
     id: "agent1",

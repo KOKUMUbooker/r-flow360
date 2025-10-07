@@ -64,7 +64,7 @@ export default function LoginPage() {
 
       case Role.Reg_User:
         dispatch(setAuthState(activeAdminAccount));
-        router.push('/dashboard');
+        router.push('/dashboard/user');
         break;
 
       default:

@@ -1,9 +1,13 @@
 export interface Inquiry {
-    user_id: string;
-    name: string;
-    email: string;
-    phone: string;
-    message: string;
+    id: string,
+    propertyId: string,
+    userId: string,
+    userName: string,
+    userEmail: string,
+    userPhone: string,
+    message: string,
+    status: string,
+    createdAt: string,
 }
 
 export interface ListingReport {
