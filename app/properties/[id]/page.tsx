@@ -5,7 +5,6 @@ import { Property } from '@/types';
 import fs from 'fs/promises';
 import { notFound } from 'next/navigation';
 import path from 'path';
-import { use } from 'react';
 
 export async function generateStaticParams() {
   const propertiesJsonPath = path.join(
