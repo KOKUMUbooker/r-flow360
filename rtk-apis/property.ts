@@ -27,6 +27,9 @@ export const propertiesApi = createApi({
             },
             providesTags: ["propeties-rtk"],
         }),
+        getProperty: build.query<{ property: Property }, { propId: string }>({
+            query: ({ propId }) => ({ url: `/property?propId=${propId}`, method: "GET" })
+        }),
         addProperty: build.mutation<Property, Property>({
             query: (body) => ({ url: `/property`, method: "POST", body }),
             invalidatesTags: ["propeties-rtk"],
@@ -40,4 +43,4 @@ export const propertiesApi = createApi({
     }),
 });
 
-export const { useAddPropertyMutation, useGetPropertiesQuery } = propertiesApi;
+export const { useAddPropertyMutation, useGetPropertiesQuery, useGetPropertyQuery } = propertiesApi;
