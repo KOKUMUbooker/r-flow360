@@ -97,6 +97,20 @@ The app should now be accessible at **[http://localhost:3000](http://localhost:3
 
 ---
 
+### ⚡ Optional: Run an optimized production build
+
+For the best performance, you can build and serve the optimized version of the app:
+
+```bash
+npm run build
+npm start
+```
+
+This compiles the app for production and starts the server using the built files.
+You can then access it at **[http://localhost:3000](http://localhost:3000)** (or your configured port).
+
+---
+
 ## 📱 Responsiveness
 
 The platform is fully optimized for:
