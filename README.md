@@ -102,7 +102,6 @@ The app should now be accessible at **[http://localhost:3000](http://localhost:3
 The platform is fully optimized for:
 
 - Desktop 🖥️
-- Tablet 💻
 - Mobile 📱
 
 ---
